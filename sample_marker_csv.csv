@@ -1,0 +1,3 @@
+id,map_id,address,description,pic,link,icon,lat,lng,anim,title,infoopen,category
+,1,"This is the address","Descriptions with spaces must be enclosed by double quotes",http://127.0.0.1/wordpress38/wp-content/uploads/2014/03/photo1.jpg,,,-26.210139,28.279704,2,"Boksburg with a space",0,0
+,1,"Dunswart, Boksburg",Description,http://127.0.0.1/wordpress38/wp-content/uploads/2014/03/photo1.jpg,,,-26.210139,28.279704,2,Boksburg,0,0

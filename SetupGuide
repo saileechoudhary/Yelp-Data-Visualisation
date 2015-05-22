@@ -1,0 +1,19 @@
+How to Step-up the Application 
+
+part a: 
+The Application is already setup on the following link. The link is GoGrid Server where the project is hosted. Try the server link to view the project. Since this is a paid service. This may not be active after a week or so. If you do not see the project here try the part b. 
+
+http://216.121.71.66/cs235_dash/
+
+part b: 
+Setting up the project from zip file.
+
+Install Tomcat webserver on the machine. (http://tomcat.apache.org/). 
+Unzip the cs235_dash.zip file in the webapps folder of Tomcat. 
+In the browser to the unzip folder. http://127.0.0.1:<port for webserver>/cs235_dash/.
+(Default port is 80.)
+
+On Linux there might be file permissions issue. Please give the folder write permission.
+
+Note - Application is only supported in Google Chrome. If the Alignment of the application is incorrect please adjust the zoom. 
+

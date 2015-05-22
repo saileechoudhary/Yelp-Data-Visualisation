@@ -1,0 +1,77 @@
+<head>
+  <title>Yelp Suggester</title>
+  <link rel="stylesheet" href="./assets/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./assets/css/ddmenu.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+
+<body class="application" style="background:#A38E8E ">
+<div id="temp" style="display:none"></div>
+
+
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">Food Explorer > Las Vegas</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left dd">
+	   
+          <li><img class="dd" src="./images/home.png" style="height:48px; width:48px; padding:8px;" onclick="highcharts(1);"></li>
+          <li><img class="dd" src="./images/cutlery.png" style="height:48px; width:48px; padding:8px;" onclick="highcharts1(1);"></li>
+	  <li><img class="dd" src="./images/hot.png" style="height:48px; width:48px; padding:8px;" onclick="highcharts2(1);"></li>
+	  <li><img class="dd" src="./images/party.png" style="height:48px; width:48px; padding:8px;" onclick="highcharts3(1);"></li>
+	  <li><div style="height:48px; width:400px;  padding:8px; font: bold 20px/28px sans-serif;"></div></li>        </ul>
+	  <div class="dd" style="float:right">
+	  <div id="total_reviews" style="height:48px; width:225px;  padding:8px; font: bold 20px/28px sans-serif; float:right; color:white">Total Reviews: 0</div>
+	  <div id="total_checkins" style="height:48px; width:235px;  padding:8px; font: bold 20px/28px sans-serif; float:right; color:white">Total Checkins: 0</div></div>
+	
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div id="canvas" class="col-sm-9" style="width:100%">
+
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <script src="./assets/lib/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./assets/lib/holderjs/holder.js"></script>
+  <script>
+	$('#temp').load('Zipcode.csv');
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+
+  <script type="text/javascript" src="./assets/js/dash.js"> </script>
+  <script src="./assets/lib/keen-js/dist/keen.min.js"></script>
+  <script src="./assets/js/meta.js"></script>
+	<script src="./js/highcharts.js"></script>
+	<script src="./js/highcharts-more.js"></script>
+	<script src="./js/modules/drilldown.js"></script>
+	<script src="./js/modules/data.js"></script>
+	<script src="./js/modules/heatmap.js"></script>
+	<script src="./js/modules/exporting.js"></script>
+<script type="text/javascript">
+	window.onload=highchartsload1;
+</script>
+
+
+</body>
+</html>
